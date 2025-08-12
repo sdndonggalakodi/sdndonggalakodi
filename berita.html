@@ -1,0 +1,55 @@
+<!-- berita.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita - SD Negeri Donggala Kodi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-700 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+            <div class="flex items-center space-x-3">
+                <img src="assets/LOGO.png" alt="Logo Sekolah" class="h-10 w-10 object-cover rounded-full">
+                <h1 class="text-2xl font-bold">SD Negeri Donggala Kodi</h1>
+            </div>
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-yellow-300">Beranda</a></li>
+                <li><a href="profil.html" class="hover:text-yellow-300">Profil</a></li>
+                <li><a href="berita.html" class="hover:text-yellow-300">Berita</a></li>
+                <li><a href="galeri.html" class="hover:text-yellow-300">Galeri</a></li>
+                <li><a href="kontak.html" class="hover:text-yellow-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">Berita & Kegiatan</h3>
+            <ul class="space-y-4">
+                <li class="bg-gray-50 p-4 rounded shadow">Upacara Bendera Rutin setiap Senin</li>
+                <li class="bg-gray-50 p-4 rounded shadow">Zikir Bersama Setiap Hari Jum'at</li>
+                <li class="bg-gray-50 p-4 rounded shadow">Asesmen Nasional Berbasi Komputer (ANBK) Tahun 2025</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-blue-700 text-white text-center py-4">
+        <p>&copy; 2025 SD Negeri Donggala Kodi. All rights reserved.</p>
+    </footer>
+</body>
+</html>

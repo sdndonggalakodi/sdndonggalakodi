@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - SD Negeri Donggala Kodi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html, body { height: 100%; }
+        body { display: flex; flex-direction: column; }
+        main { flex: 1; }
+    </style>
+</head>
+<body class="bg-amber-50">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+            <div class="flex items-center space-x-3">
+                <img src="assets/LOGO.png" alt="Logo Sekolah" class="h-10 w-10 object-cover rounded-full">
+                <h1 class="text-2xl font-bold">SD Negeri Donggala Kodi</h1>
+            </div>
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-yellow-300">Beranda</a></li>
+                <li><a href="profil.html" class="hover:text-yellow-300">Profil</a></li>
+                <li><a href="berita.html" class="hover:text-yellow-300">Berita</a></li>
+                <li><a href="galeri.html" class="hover:text-yellow-300">Galeri</a></li>
+                <li><a href="kontak.html" class="hover:text-yellow-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero h-[70vh] flex items-center justify-center text-center text-white relative"
+            style="background: url('https://source.unsplash.com/1600x900/?school,education') center/cover no-repeat;">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 max-w-3xl p-6">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di SD Negeri Donggala Kodi</h2>
+                <p class="text-lg md:text-xl">Mencetak Generasi Berprestasi, Berkarakter, dan Cinta Lingkungan</p>
+            </div>
+        </section>
+
+        <!-- Sekilas Tentang Kami -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center mb-8 text-blue-700">Sekilas Tentang Kami</h3>
+                <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+                    SD Negeri Donggala Kodi adalah sekolah yang berkomitmen pada pendidikan berkualitas, pembentukan karakter,
+                    dan pengembangan potensi siswa untuk masa depan yang cerah.
+                </p>
+                
+                <!-- Gambar kegiatan sekolah -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <img src="assets/gambar1.jpg" alt="Kegiatan 1" class="w-full h-56 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+                    <img src="assets/gambar2.jpg" alt="Kegiatan 2" class="w-full h-56 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+                    <img src="assets/gambar3.jpg" alt="Kegiatan 3" class="w-full h-56 object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center py-4 mt-auto">
+        <p>&copy; 2025 SD Negeri Donggala Kodi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

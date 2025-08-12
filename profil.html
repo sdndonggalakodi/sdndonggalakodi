@@ -1,0 +1,136 @@
+<!-- profil.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - SD Negeri Donggala Kodi</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigasi -->
+    <nav class="bg-blue-700 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+            <div class="flex items-center space-x-3">
+                <img src="assets/LOGO.png" alt="Logo Sekolah" class="h-10 w-10 object-cover rounded-full">
+                <h1 class="text-2xl font-bold">SD Negeri Donggala Kodi</h1>
+            </div>
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-yellow-300">Beranda</a></li>
+                <li><a href="profil.html" class="hover:text-yellow-300">Profil</a></li>
+                <li><a href="berita.html" class="hover:text-yellow-300">Berita</a></li>
+                <li><a href="galeri.html" class="hover:text-yellow-300">Galeri</a></li>
+                <li><a href="kontak.html" class="hover:text-yellow-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <img src="assets/sekolah.jpg" alt="Foto SD Negeri Donggala Kodi" class="w-full h-72 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <h2 class="text-white text-4xl font-bold">Profil Sekolah</h2>
+        </div>
+    </section>
+
+    <!-- Konten Profil -->
+    <main class="py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Data Profil -->
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Nama Sekolah:</strong> SD Negeri Donggala Kodi</p>
+                    <p><strong>NPSN:</strong> 40203499</p>
+                    <p><strong>Alamat:</strong> Jl. Gawalise No. 6b, Kelurahan Donggala Kodi, Kecamatan Ulujadi, Kota Palu, Provinsi Sulawesi Tengah</p>
+                    <p><strong>Status:</strong> Negeri</p>
+                    <p><strong>Jenjang:</strong> Sekolah Dasar (SD)</p>
+                    <p><strong>Naungan:</strong> Pemerintah Daerah – Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi</p>
+                    <p><strong>Tahun Pendirian:</strong> 1979</p>
+                    <p><strong>Akreditasi:</strong> B (Berlaku hingga 2026)</p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/LOGO.png" alt="Logo Sekolah" class="w-48 h-48 object-contain">
+                </div>
+            </div>
+
+            <!-- Visi -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-8">
+                <h4 class="text-2xl font-semibold mb-4 text-blue-700">Visi Sekolah</h4>
+                <p class="italic text-gray-700">Menjadi sekolah unggul dalam prestasi akademik dan non-akademik, berkarakter disiplin, kreatif, serta peduli lingkungan.</p>
+            </div>
+
+            <!-- Misi -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-8">
+                <h4 class="text-2xl font-semibold mb-4 text-blue-700">Misi Sekolah</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Menyelenggarakan pembelajaran yang aktif, kreatif, inovatif, dan menyenangkan.</li>
+                    <li>Menanamkan nilai-nilai kedisiplinan dan tanggung jawab kepada seluruh warga sekolah.</li>
+                    <li>Mengembangkan bakat dan minat siswa di bidang akademik maupun non-akademik.</li>
+                    <li>Mewujudkan lingkungan sekolah yang bersih, indah, dan sehat.</li>
+                    <li>Mengoptimalkan peran serta orang tua dan masyarakat dalam mendukung pendidikan.</li>
+                </ul>
+            </div>
+
+            <!-- Fasilitas -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-8">
+                <h4 class="text-2xl font-semibold mb-4 text-blue-700">Fasilitas Sekolah</h4>
+                <div class="grid md:grid-cols-2 gap-4 text-gray-700">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Ruang Kelas</li>
+                        <li>Perpustakaan Sekolah</li>
+                        <li>Ruang Guru</li>
+                        <li>Lapangan Upacara dan Olahraga</li>
+                    </ul>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Toilet Siswa dan Guru</li>
+                        <li>Akses Internet 50 Mbps</li>
+                        <li>Listrik dari PLN</li>
+                        <li>Lahan seluas 1.226 m²</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tenaga Pendidik -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-8">
+                <h4 class="text-2xl font-semibold mb-4 text-blue-700">Tenaga Pendidik & Kependidikan</h4>
+                <p class="text-gray-700">Jumlah Guru dan Tenaga Kependidikan: 14 orang</p>
+                <p class="text-gray-700">Operator Sekolah: Fajri L</p>
+            </div>
+
+            <!-- Peserta Didik -->
+            <div class="bg-white shadow-lg rounded-xl p-6 mb-8">
+                <h4 class="text-2xl font-semibold mb-4 text-blue-700">Data Peserta Didik</h4>
+                <p class="text-gray-700">Jumlah Siswa: 166 orang</p>
+            </div>
+
+            <!-- Prestasi -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <h4 class="text-2xl font-semibold mb-4 text-blue-700">Prestasi Sekolah</h4>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Juara lomba kebersihan sekolah tingkat kecamatan</li>
+                    <li>Finalis lomba OSN tingkat kota</li>
+                    <li>Juara lomba seni dan budaya tingkat kecamatan</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center py-4 mt-8">
+        <p>&copy; 2025 SD Negeri Donggala Kodi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
