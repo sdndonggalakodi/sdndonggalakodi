@@ -20,12 +20,23 @@
     </style>
 </head>
 <body class="bg-gray-100">
+    <!-- Navbar -->
     <nav class="bg-blue-700 text-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+            <!-- Logo & Nama Sekolah -->
             <div class="flex items-center space-x-3">
                 <img src="assets/LOGO.png" alt="Logo Sekolah" class="h-10 w-10 object-cover rounded-full">
-                <h1 class="text-2xl font-bold">SD Negeri Donggala Kodi</h1>
+                <h1 class="text-xl md:text-2xl font-bold">SD Negeri Donggala Kodi</h1>
             </div>
+            
+            <!-- Tombol Hamburger (Mobile) -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
             <!-- Menu Desktop -->
             <ul class="hidden md:flex space-x-6">
                 <li><a href="index.html" class="hover:text-yellow-300">Beranda</a></li>
@@ -35,21 +46,44 @@
                 <li><a href="kontak.html" class="hover:text-yellow-300">Kontak</a></li>
             </ul>
         </div>
+
+        <!-- Menu Mobile -->
+        <div id="menu-mobile" class="hidden md:hidden bg-blue-600">
+            <ul class="flex flex-col space-y-2 px-4 py-3">
+                <li><a href="index.html" class="hover:text-yellow-300 block">Beranda</a></li>
+                <li><a href="profil.html" class="hover:text-yellow-300 block">Profil</a></li>
+                <li><a href="berita.html" class="hover:text-yellow-300 block">Berita</a></li>
+                <li><a href="galeri.html" class="hover:text-yellow-300 block">Galeri</a></li>
+                <li><a href="kontak.html" class="hover:text-yellow-300 block">Kontak</a></li>
+            </ul>
+        </div>
     </nav>
 
+    <!-- Konten Berita -->
     <section class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <h3 class="text-3xl font-bold text-center mb-8">Berita & Kegiatan</h3>
             <ul class="space-y-4">
                 <li class="bg-gray-50 p-4 rounded shadow">Upacara Bendera Rutin setiap Senin</li>
                 <li class="bg-gray-50 p-4 rounded shadow">Zikir Bersama Setiap Hari Jum'at</li>
-                <li class="bg-gray-50 p-4 rounded shadow">Asesmen Nasional Berbasi Komputer (ANBK) Tahun 2025</li>
+                <li class="bg-gray-50 p-4 rounded shadow">Asesmen Nasional Berbasis Komputer (ANBK) Tahun 2025</li>
             </ul>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-blue-700 text-white text-center py-4">
         <p>&copy; 2025 SD Negeri Donggala Kodi. All rights reserved.</p>
     </footer>
+
+    <!-- Script Toggle Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuMobile = document.getElementById('menu-mobile');
+
+        menuBtn.addEventListener('click', () => {
+            menuMobile.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
