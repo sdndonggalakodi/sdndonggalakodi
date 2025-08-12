@@ -21,12 +21,21 @@
     </style>
 </head>
 <body class="bg-gray-100">
+
+    <!-- Navbar -->
     <nav class="bg-blue-700 text-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo dan Judul -->
             <div class="flex items-center space-x-3">
                 <img src="assets/LOGO.png" alt="Logo Sekolah" class="h-10 w-10 object-cover rounded-full">
-                <h1 class="text-2xl font-bold">SD Negeri Donggala Kodi</h1>
+                <h1 class="text-lg md:text-2xl font-bold">SD Negeri Donggala Kodi</h1>
             </div>
+
+            <!-- Tombol Menu Mobile -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
             <!-- Menu Desktop -->
             <ul class="hidden md:flex space-x-6">
                 <li><a href="index.html" class="hover:text-yellow-300">Beranda</a></li>
@@ -36,20 +45,44 @@
                 <li><a href="kontak.html" class="hover:text-yellow-300">Kontak</a></li>
             </ul>
         </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-600 px-4 pb-4">
+            <a href="index.html" class="block py-2 hover:text-yellow-300">Beranda</a>
+            <a href="profil.html" class="block py-2 hover:text-yellow-300">Profil</a>
+            <a href="berita.html" class="block py-2 hover:text-yellow-300">Berita</a>
+            <a href="galeri.html" class="block py-2 hover:text-yellow-300">Galeri</a>
+            <a href="kontak.html" class="block py-2 hover:text-yellow-300">Kontak</a>
+        </div>
     </nav>
 
-    <section class="py-12 bg-white text-center">
-        <h3 class="text-3xl font-bold mb-4">Kontak Kami</h3>
-        <p class="mb-2"><i class="fas fa-map-marker-alt"></i> Jl. Gawalise Nomor 6b, Palu, Sulawesi Tengah</p>
-        <p class="mb-2"><i class="fas fa-phone"></i> 082188227345</p>
-        <p class="mb-4"><i class="fas fa-envelope"></i> sdndonggalakodi@email.com</p>
-        <a href="https://wa.me/6282188227345" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600 inline-flex items-center">
-            <i class="fab fa-whatsapp mr-2"></i> Hubungi via WhatsApp
-        </a>
-    </section>
+    <!-- Konten Utama -->
+    <main>
+        <section class="py-12 bg-white text-center">
+            <h3 class="text-3xl font-bold mb-4">Kontak Kami</h3>
+            <p class="mb-2"><i class="fas fa-map-marker-alt"></i> Jl. Gawalise Nomor 6b, Palu, Sulawesi Tengah</p>
+            <p class="mb-2"><i class="fas fa-phone"></i> 082188227345</p>
+            <p class="mb-4"><i class="fas fa-envelope"></i> sdndonggalakodi@email.com</p>
+            <a href="https://wa.me/6282188227345" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600 inline-flex items-center">
+                <i class="fab fa-whatsapp mr-2"></i> Hubungi via WhatsApp
+            </a>
+        </section>
+    </main>
 
+    <!-- Footer -->
     <footer class="bg-blue-700 text-white text-center py-4">
         <p>&copy; 2025 SD Negeri Donggala Kodi. All rights reserved.</p>
     </footer>
+
+    <!-- Script Toggle Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>
